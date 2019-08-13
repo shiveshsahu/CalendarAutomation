@@ -22,7 +22,7 @@ public class Retry extends Driver implements IRetryAnalyzer {
     private int count = 0;
     private static int maxTry = 1; //Run the failed test 2 times
  
-    @Override
+    //@Override
     public boolean retry(ITestResult iTestResult) {
         if (!iTestResult.isSuccess()) {                      //Check if test not succeed
             if (count < maxTry) {                            //Check if maxTry count is reached
