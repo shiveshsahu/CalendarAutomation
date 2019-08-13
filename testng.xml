@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AppiumTest" >
+    <listeners>
+        <listener class-name="com.calendar.utils.Listeners.TestListeners"/>
+        <listener class-name="com.calendar.utils.Listeners.AnnotationTransformer"/>
+    </listeners>
+ 
+    <test name="VerifyTitle">
+        <classes>
+            <class name="com.calendar.test.VerifyTitle"/>
+        </classes>
+    </test>
+    <test name="AddEvent">
+        <classes>
+            <class name="com.calendar.test.AddEvent"/>
+        </classes>
+    </test>
+</suite>

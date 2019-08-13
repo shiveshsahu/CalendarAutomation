@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AppiumTest]">
+  <listeners>
+    <listener class-name="com.calendar.utils.Listeners.TestListeners"/>
+    <listener class-name="com.calendar.utils.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="AddEvent(failed)">
+    <classes>
+      <class name="com.calendar.test.AddEvent">
+        <methods>
+          <include name="test"/>
+          <include name="creatNewEvent" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.calendar.test.AddEvent -->
+    </classes>
+  </test> <!-- AddEvent(failed) -->
+</suite> <!-- Failed suite [AppiumTest] -->
