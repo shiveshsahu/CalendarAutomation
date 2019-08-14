@@ -39,6 +39,7 @@ public class ExcelReadData {
 			for (int k = 0; k <totalCol; k++) {
 				data[i-1][k] = getCellData(i, k);
 				System.out.println(data[i-1][k]);
+				//added to github
 				
 			}
 		}
