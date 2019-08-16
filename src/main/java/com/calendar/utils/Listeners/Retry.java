@@ -5,7 +5,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-import com.calendar.base.Baseclass;
 import com.calendar.base.Driver;
 import com.calendar.utils.ExtentReports.ExtentTestManager;
 import com.relevantcodes.extentreports.LogStatus;
@@ -38,9 +37,9 @@ public class Retry extends Driver implements IRetryAnalyzer {
         return false;
     }
  
+    @SuppressWarnings("unused")
     public void extendReportsFailOperations(ITestResult iTestResult) {
-        Object testClass = iTestResult.getInstance();
-        //WebDriver webDriver = ((Baseclass) testClass).getDriver();
+		Object testClass = iTestResult.getInstance();
         String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
         ExtentTestManager.getTest().log(LogStatus.FAIL, "Test Failed",
             ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));

@@ -8,6 +8,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 
 public class ExtentTestManager {
 	
+	@SuppressWarnings("rawtypes")
 	static Map extentTestMap = new HashMap();
     static ExtentReports extent = ExtentManager.getReporter();
  
@@ -19,7 +20,8 @@ public class ExtentTestManager {
         extent.endTest((ExtentTest) extentTestMap.get((int) (long) (Thread.currentThread().getId())));
     }
  
-    public static synchronized ExtentTest startTest(String testName, String desc) {
+    @SuppressWarnings("unchecked")
+	public static synchronized ExtentTest startTest(String testName, String desc) {
         ExtentTest test = extent.startTest(testName, desc);
         extentTestMap.put((int) (long) (Thread.currentThread().getId()), test);
         return test;

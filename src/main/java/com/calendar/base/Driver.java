@@ -1,7 +1,6 @@
 package com.calendar.base;
 
 import org.openqa.selenium.support.PageFactory;
-import org.testng.ITestResult;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
