@@ -37,7 +37,7 @@ public class Retry extends Driver implements IRetryAnalyzer {
         return false;
     }
  
-    @SuppressWarnings("unused")
+   
     public void extendReportsFailOperations(ITestResult iTestResult) {
 		Object testClass = iTestResult.getInstance();
         String base64Screenshot = "data:image/png;base64," + ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
