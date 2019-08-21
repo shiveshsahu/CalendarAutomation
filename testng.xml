@@ -10,6 +10,7 @@
     <!-- to run bu class name -->
         <classes>
             <class name="com.calendar.test.VerifyTitle"/>
+            <class name="com.calendar.test.AddEvent"/>
         </classes>
     </test>
     <!-- <test name="AddEvent">
