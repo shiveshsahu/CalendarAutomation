@@ -40,19 +40,20 @@ public class Baseclass {
 		  cap.setCapability("autoDismissAlerts", true);
 		  cap.setCapability("unicodeKeyboard", true);
 		  cap.setCapability("resetKeyboard", true);
+		  
 		
 		
-		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+		driver = new AndroidDriver<MobileElement>(new URL("http:/0.0.0.0:4723/wd/hub"), cap);
 		
 		
 	}
-	/*
-	 * @AfterSuite public void afterMethod() {
-	 * 
-	 * driver.close();
-	 * 
-	 * }
-	 */
+	
+	  @AfterSuite public void afterMethod() {
+	  
+	  driver.quit();
+	  
+	  }
+	 
 }
 	
 

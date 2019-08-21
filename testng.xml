@@ -7,13 +7,24 @@
     </listeners>
  
     <test name="VerifyTitle">
+    <!-- to run bu class name -->
         <classes>
             <class name="com.calendar.test.VerifyTitle"/>
         </classes>
     </test>
-    <test name="AddEvent">
+    <!-- <test name="AddEvent">
         <classes>
             <class name="com.calendar.test.AddEvent"/>
-        </classes>
-    </test>
+        </classes> -->
+        <!-- If there are many packages with tests that all need to be executed, rather than listing all package names individually,
+         we can use regular expression to include all packages -->
+        <!-- <packages>
+      <package name=".*" />
+    </packages> -->
+    <!-- to run with packages -->
+    <!-- <packages>
+            <package name="com.calendar.test"/>
+            <package name="com.testingexcellence.tests.api"/>
+        </packages> --> 
+   <!--  </test> -->
 </suite>
