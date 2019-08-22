@@ -37,6 +37,7 @@ public class AddEvent extends Baseclass{
 		Eventpage.createEvent(Eventname, Guests, Location, Descriptions);
 		Eventpage.done();
 		TestUtility.takeScreenShot("creatNewEvent");
+		//just testing
 		
 		
 	}
