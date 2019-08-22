@@ -6,7 +6,7 @@
         <listener class-name="com.calendar.utils.Listeners.AnnotationTransformer"/>
     </listeners>
  
-    <test name="VerifyTitle">
+    <test name="calendarTest">
     <!-- to run bu class name -->
         <classes>
             <class name="com.calendar.test.VerifyTitle"/>
